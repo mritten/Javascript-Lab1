@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tasks #1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Roboto" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<script type="text/javascript">
+
+		function onloadstart(){
+		    var val = prompt("Enter a number!")
+			if(isNaN(val) || val<0){
+                onloadstart();
+			}else {
+		        var finalno=0;
+		        val = parseInt(val);
+		        for(var i=val;i>0;i--){
+                    finalno+=i;
+				}
+				console.log('Output: '+finalno);
+		        document.write('Output: '+finalno);
+			}
+		}
+	</script>
+</head>
+	
+<body onload="onloadstart();">
+
+</body>
+</html>

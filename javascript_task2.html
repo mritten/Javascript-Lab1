@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tasks #1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Roboto" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<script type="text/javascript">
+
+		function onloadstart(){
+			var val='Do​ ​you​ ​want​ ​to​ ​play?';
+			var strings = '';
+			do{
+			    if(val=='yes'){
+					strings +=' '+ prompt("Enter​ ​a​ ​word.");
+					val = 'Do​ ​you​ ​want​ ​to​ ​play again?';
+				}
+				val = prompt(val)
+				val = val.toLowerCase();
+			}while(val=='yes')
+				console.log('Output: '+strings);
+		        document.write('Output: '+strings);
+
+		}
+	</script>
+</head>
+	
+<body onload="onloadstart();">
+
+</body>
+</html>
